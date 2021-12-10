@@ -1,0 +1,50 @@
+.product-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .product-image {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+}
+/* Tablets y phablets */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .product-item {
+    .product-image {
+      width: 80%;
+      height: auto;
+    }
+  }
+}
+
+/* Escritorio pequeño / tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .product-item {
+    .product-image {
+      width: 60%;
+      height: auto;
+    }
+  }
+}
+
+/* Escritorio grande y extra grande */
+@media only screen and (min-width: 992px) {
+  .product-item {
+    height: 600px;
+    .product-image {
+      // border-radius: 30px;
+      box-shadow: none;
+    }
+  }
+}
+
+/* Escritorio extra grande */
+@media only screen and (min-width: 1200px) {
+}
+
+// /* Teléfonos */
+// @media only screen and (max-width: 575px){
+
+// }

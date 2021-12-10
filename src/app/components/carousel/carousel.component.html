@@ -1,0 +1,8 @@
+<p-carousel [value]="products" styleClass="custom-carousel" [circular]="true" [autoplayInterval]="3000"
+  [showNavigators]="false">
+  <ng-template let-robot pTemplate="item">
+    <div class="product-item">
+      <img [src]="robot.image" [alt]="robot.name" class="product-image">
+    </div>
+  </ng-template>
+</p-carousel>
